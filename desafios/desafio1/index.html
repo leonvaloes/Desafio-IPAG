@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="../../index.html"><img src="https://www.ipag.com.br/wp-content/uploads/2022/10/logo-1.png" alt="logo IPag"></a>
+    <nav class="nav">
+        <ul>
+            <li class="drop"><a href="#">Desafios de Código</a>
+                <ul class="dropdown">
+                    <li><a href="../desafio1/index.html">Desafio 01</a></li>
+                    <li><a href="../desafio2/index.html">Desafio 02</a></li>
+                    <li><a href="../desafio3/index.html">Desafio 03</a></li>
+                    <li><a href="../desafio4/index.html">Desafio 04</a></li>
+                    <li><a href="../desafio5/index.html">Desafio 05</a></li>
+                    <li><a href="../desafio6/index.html">Desafio 06</a></li>
+                    <li><a href="../desafio7/index.html">Desafio 07</a></li>
+                    <li><a href="../desafio8/index.html">Desafio 08</a></li>
+                    <li><a href="../desafio9/index.html">Desafio 09</a></li>
+                    <li><a href="../desafio10/index.html">Desafio 10</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+
+  
+  <div class="calculadora">
+    <h1>Calculadora</h1>
+    <input type="text" id="display" class="display" readonly>
+    <div class="row">
+      <button class="button" onclick="adicionarAoVisor('7')">7</button>
+      <button class="button" onclick="adicionarAoVisor('8')">8</button>
+      <button class="button" onclick="adicionarAoVisor('9')">9</button>
+      <button class="button operation" onclick="adicionarAoVisor('/')">÷</button>
+    </div>
+    <div class="row">
+      <button class="button" onclick="adicionarAoVisor('4')">4</button>
+      <button class="button" onclick="adicionarAoVisor('5')">5</button>
+      <button class="button" onclick="adicionarAoVisor('6')">6</button>
+      <button class="button operation" onclick="adicionarAoVisor('*')">x</button>
+    </div>
+    <div class="row">
+      <button class="button" onclick="adicionarAoVisor('1')">1</button>
+      <button class="button" onclick="adicionarAoVisor('2')">2</button>
+      <button class="button" onclick="adicionarAoVisor('3')">3</button>
+      <button class="button operation" onclick="adicionarAoVisor('-')">-</button>
+    </div>
+    <div class="row">
+      <button class="button" onclick="adicionarAoVisor('0')">0</button>
+      <button class="button" onclick="adicionarAoVisor('.')">.</button>
+      <button class="button operation" onclick="limparVisor()">C</button>
+      <button class="button operation" onclick="adicionarAoVisor('+')">+</button>
+    </div>
+    <div class="row">
+      <button class="button equal" onclick="calcular()">=</button>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

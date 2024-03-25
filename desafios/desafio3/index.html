@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Área de Formas Geométricas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<header>
+  <a href="../../index.html"><img src="https://www.ipag.com.br/wp-content/uploads/2022/10/logo-1.png" alt="logo IPag"></a>
+  <nav class="nav">
+      <ul>
+          <li class="drop"><a href="#">Desafios de Código</a>
+              <ul class="dropdown">
+                  <li><a href="../desafio1/index.html">Desafio 01</a></li>
+                  <li><a href="../desafio2/index.html">Desafio 02</a></li>
+                  <li><a href="../desafio3/index.html">Desafio 03</a></li>
+                  <li><a href="../desafio4/index.html">Desafio 04</a></li>
+                  <li><a href="../desafio5/index.html">Desafio 05</a></li>
+                  <li><a href="../desafio6/index.html">Desafio 06</a></li>
+                  <li><a href="../desafio7/index.html">Desafio 07</a></li>
+                  <li><a href="../desafio8/index.html">Desafio 08</a></li>
+                  <li><a href="../desafio9/index.html">Desafio 09</a></li>
+                  <li><a href="../desafio10/index.html">Desafio 10</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+</header>
+
+
+<body>
+  <div class="container">
+    <h1>Calculadora de Área de Formas Geométricas</h1>
+    <div class="form-selector">
+      <label for="forma">Escolha uma forma:</label>
+      <select id="forma">
+        <option value="default"></option>
+        <option value="quadrado">Quadrado</option>
+        <option value="retangulo">Retângulo</option>
+        <option value="triangulo">Triângulo</option>
+        <option value="circulo">Círculo</option>
+      </select>
+    </div>
+    <div id="inputs">
+    </div>
+    <button onclick="calcularArea()">Calcular Área</button>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

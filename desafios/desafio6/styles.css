@@ -1,0 +1,309 @@
+header {
+  margin: 0;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+header img {
+  height: 50px;
+}
+
+header .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header .nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+header .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+}
+
+header .drop:hover .dropdown {
+  display: block;
+}
+
+header .dropdown li {
+  display: block;
+}
+
+header .dropdown li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+header li {
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 0;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+}
+
+i{
+  margin-left: 10px;
+}
+
+body {
+-moz-osx-font-smoothing:grayscale;
+-ms-flex-direction:column;
+-webkit-box-direction:normal;
+-webkit-box-orient:vertical;
+-webkit-font-smoothing:antialiased;
+background:#f5f5f5;
+color:#777;
+display:flex;
+flex-direction:column;
+font-family:Montserrat, sans-serif;
+font-size: 1em;
+font-weight:300;
+margin:0;
+padding: 0;
+min-height:100vh;
+}
+
+header h1 {
+font-weight: 200;
+font-size: 2.2rem;
+color: #222;
+text-align: center;
+}
+
+header nav {
+  
+margin: 0 0;
+}
+
+header nav::after {
+display: block;
+content: '';
+clear: both;
+}
+
+header nav ul {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+header nav ul li {
+float: left;
+position: relative;
+}
+
+header nav ul li a {
+display: block;
+color: rgba(255, 255, 255, .9);
+text-decoration: none;
+padding: 1rem 2rem;
+border-top: 2px solid transparent;
+border-bottom: 2px solid transparent;
+transition: all .3s ease-in-out;
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+background: rgba(0, 0, 0, .15);
+}
+
+header nav ul li a:focus {
+color: white;
+}
+
+header nav ul li a:not(:only-child)::after {
+padding-left: 4px;
+content: ' ▾';
+}
+
+header nav ul li ul li {
+min-width: 190px;
+}
+
+header nav ul li ul li a {
+background: transparent;
+color: #555;
+border-bottom: 1px solid #DDE0E7;
+}
+header .dropdown {
+display: none;
+position: absolute;
+background: #fff;
+box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+}
+
+
+.container {
+  background-color: rgba(0, 128, 0, 0.059);
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container input[type="text"],
+.input-container select {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.tarefa-prioridade-baixa {
+  background-color: #28a7465e;
+  color: #fff;
+}
+
+.tarefa-prioridade-media {
+  background-color: #007bff6d;
+  color: #fff;
+}
+
+.tarefa-prioridade-alta {
+  background-color: #dc354681;
+  color: #fff;
+}
+
+.concluida {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.acao {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.acao button {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.acao button.editar {
+  background-color: #ffc107;
+  margin-right: 5px;
+}
+
+.acao button.remover {
+  background-color: #dc3545;
+}
+
+.acao button.concluir {
+  background-color: #007bff;
+}
+
+.acao button:hover {
+  background-color: #6c757d;
+}
+
+#edicaoTarefa {
+  display: none;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#edicaoTarefa h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#edicaoTarefa input[type="text"],
+#edicaoTarefa select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#edicaoTarefa button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#edicaoTarefa button:hover {
+  background-color: #0056b3;
+}
+
+.tarefa-concluída {
+  text-decoration: line-through; 
+  background-color: #888;
+  color: white; 
+}

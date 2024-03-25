@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Simulador de Financiamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="https://www.ipag.com.br/wp-content/uploads/2022/10/logo-1.png" alt="logo IPag"></a>
+        <nav class="nav">
+            <ul>
+                <li class="drop"><a href="#">Desafios de Código</a>
+                    <ul class="dropdown">
+                        <li><a href="../desafio1/index.html">Desafio 01</a></li>
+                        <li><a href="../desafio2/index.html">Desafio 02</a></li>
+                        <li><a href="../desafio3/index.html">Desafio 03</a></li>
+                        <li><a href="../desafio4/index.html">Desafio 04</a></li>
+                        <li><a href="../desafio5/index.html">Desafio 05</a></li>
+                        <li><a href="../desafio6/index.html">Desafio 06</a></li>
+                        <li><a href="../desafio7/index.html">Desafio 07</a></li>
+                        <li><a href="../desafio8/index.html">Desafio 08</a></li>
+                        <li><a href="../desafio9/index.html">Desafio 09</a></li>
+                        <li><a href="../desafio10/index.html">Desafio 10</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+      </header>
+ <h1>Simulador de Financiamento</h1>
+ <p>Informe os detalhes do financiamento:</p>
+ <input type="number" id="valorTotal" placeholder="Valor total do financiamento">
+ <input type="number" id="quantidadeParcelas" placeholder="Quantidade de parcelas">
+ <input type="number" id="taxaJurosAnual" placeholder="Taxa nominal de juros anual (%)">
+ <button onclick="calcularFinanciamento()">Calcular Financiamento</button>
+ <div id="resultado"></div>
+ <script src="script.js"></script>
+</body>
+</html>

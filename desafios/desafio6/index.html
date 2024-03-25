@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="https://www.ipag.com.br/wp-content/uploads/2022/10/logo-1.png" alt="logo IPag"></a>
+        <nav class="nav">
+            <ul>
+                <li class="drop"><a href="#">Desafios de Código</a>
+                    <ul class="dropdown">
+                        <li><a href="../desafio1/index.html">Desafio 01</a></li>
+                        <li><a href="../desafio2/index.html">Desafio 02</a></li>
+                        <li><a href="../desafio3/index.html">Desafio 03</a></li>
+                        <li><a href="../desafio4/index.html">Desafio 04</a></li>
+                        <li><a href="../desafio5/index.html">Desafio 05</a></li>
+                        <li><a href="../desafio6/index.html">Desafio 06</a></li>
+                        <li><a href="../desafio7/index.html">Desafio 07</a></li>
+                        <li><a href="../desafio8/index.html">Desafio 08</a></li>
+                        <li><a href="../desafio9/index.html">Desafio 09</a></li>
+                        <li><a href="../desafio10/index.html">Desafio 10</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <div class="input-container">
+            <input type="text" id="descricaoTarefa" placeholder="Descrição da tarefa">
+            <select id="prioridadeTarefa">
+                <option value="alta">Alta</option>
+                <option value="media">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+            <select id="statusTarefa">
+                <option value="pendente">Pendente</option>
+                <option value="concluida">Concluída</option>
+            </select>
+            <button type="submit" id="adicionarTarefa">Adicionar Tarefa</button>
+        </div>
+        <ul id="listaTarefas"></ul>
+        <div id="edicaoTarefa" style="display: none;">
+            <h2>Editar Tarefa</h2>
+            <form id="formEditarTarefa">
+                <input type="text" id="novaDescricao" placeholder="Nova descrição">
+                <select id="novaPrioridade">
+                    <option value="alta">Alta</option>
+                    <option value="media">Média</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+                <button type="submit" id="confirmarEdicao">Confirmar Edição</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
